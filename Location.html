@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="email-obfuscation" content="off">
   <title>SlowPoor Café – Location & Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
@@ -17,6 +18,7 @@
       --gray:     #e8e3db;
       --text:     #3d2b1f;
       --muted:    #9a8778;
+      --mutedIn:  #555555;
       --radius:   12px;
     }
 
@@ -507,9 +509,9 @@
     flex-wrap: wrap;
     gap: 8px;
     font-size: 13px;
-    color: var(--muted);
+    color: var(--mutedIn);
   }
-    .footer-inner a { margin: 0 10px; transition: color 0.2s; }
+    .footer-inner a { margin: 0 10px; transition: color 0.2s; text-decoration: none; }
     .footer-inner a:hover { color: var(--dark); }
 
 
@@ -711,8 +713,9 @@
               </div>
               <div>
                 <h3>Email</h3>
-                <a href="/cdn-cgi/l/email-protection#79111c151516390a15160e0916160b1a181f1c571a1614"><p><span class="__cf_email__" data-cfemail="68000d040407281b04071f1807071a0b090e0d460b0705">
-                   [hello@slowpoorcafe.com]</span></p></a> 
+                <a href="mailto:hello@slowpoorcafe.com">
+                   <p>hello@slowpoorcafe.com</p>
+                </a>
               </div>
             </article>
 
@@ -816,7 +819,7 @@
     <div>
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
-      <a href="https://www.facebook.com/profile.php?id=61580804151427">Follow us on social media</a>]
+      <a href="https://www.facebook.com/profile.php?id=61580804151427">Follow us on social media</a>
       <a href="#">Subscribe to our newsletter for updates</a>
     </div>
   </div>
